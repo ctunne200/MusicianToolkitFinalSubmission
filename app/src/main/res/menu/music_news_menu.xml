@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.christopher.mysheetmusic.MainActivity">
+    <item
+        android:id="@+id/action_rssurl"
+        android:orderInCategory="100"
+        android:title="@string/rss_url"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_about_black"/>
+
+</menu>
