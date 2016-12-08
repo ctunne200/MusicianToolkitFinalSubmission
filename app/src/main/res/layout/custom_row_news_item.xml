@@ -11,7 +11,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/msm_button_background">
 
         <TextView
             android:text="TextView"
@@ -20,17 +21,19 @@
             android:id="@+id/date_text"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:padding="@dimen/activity_horizontal_margin"/>
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/msm_button_text"/>
 
         <TextView
             android:text="TextView"
-            android:textSize="20sp"
+            android:textSize="@dimen/list_header_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/date_text"
             android:layout_centerHorizontal="true"
             android:id="@+id/title_text"
-            android:padding="@dimen/activity_horizontal_margin"/>
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/msm_button_text"/>
 
 
 

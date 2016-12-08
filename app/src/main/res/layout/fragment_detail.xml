@@ -12,7 +12,7 @@
 
         <TextView
             android:id="@+id/titleLabelTextView"
-            style="@style/ContactLabelTextView"
+            style="@style/EntryLabelTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -21,7 +21,7 @@
 
         <TextView
             android:id="@+id/titleTextView"
-            style="@style/ContactTextView"
+            style="@style/EntryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/composerLabelTextView"
-            style="@style/ContactLabelTextView"
+            style="@style/EntryLabelTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -38,7 +38,7 @@
 
         <TextView
             android:id="@+id/composerTextView"
-            style="@style/ContactTextView"
+            style="@style/EntryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -46,7 +46,7 @@
 
         <TextView
             android:id="@+id/genreLabelTextView"
-            style="@style/ContactLabelTextView"
+            style="@style/EntryLabelTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -55,7 +55,7 @@
 
         <TextView
             android:id="@+id/genreTextView"
-            style="@style/ContactTextView"
+            style="@style/EntryTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"

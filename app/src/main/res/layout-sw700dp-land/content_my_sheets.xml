@@ -16,7 +16,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <fragment
-        android:id="@+id/entriesFragment"
+        android:id="@+id/entryFragment"
         android:name="com.example.christopher.mysheetmusic.MySheetsFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"

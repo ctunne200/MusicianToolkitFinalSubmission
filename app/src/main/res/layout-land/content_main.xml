@@ -1,57 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/gridLayout">
+        android:layout_centerVertical="true">
 
         <Button
             android:id="@+id/MySheetsButton"
-            android:layout_width="@dimen/main_button_size"
-            android:layout_height="@dimen/main_button_size"
+            android:layout_width="@dimen/main_button_size_land"
+            android:layout_height="@dimen/main_button_size_land"
             android:layout_column="1"
+            android:layout_margin="10dp"
             android:layout_row="1"
-            android:text="@string/title_activity_my_sheets" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_library"
+            android:padding="5dp"
+            android:text="@string/title_activity_my_sheets"
+            android:textColor="@color/msm_button_text" />
 
         <Button
             android:id="@+id/MusicNewsButton"
-            android:layout_width="@dimen/main_button_size"
-            android:layout_height="@dimen/main_button_size"
+            android:layout_width="@dimen/main_button_size_land"
+            android:layout_height="@dimen/main_button_size_land"
             android:layout_column="2"
+            android:layout_margin="10dp"
             android:layout_row="1"
-            android:text="@string/title_activity_music_news" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_rss"
+            android:padding="5dp"
+            android:text="@string/title_activity_music_news"
+            android:textColor="@color/msm_button_text" />
 
         <Button
             android:id="@+id/NearbyStoresButton"
-            android:layout_width="@dimen/main_button_size"
-            android:layout_height="@dimen/main_button_size"
+            android:layout_width="@dimen/main_button_size_land"
+            android:layout_height="@dimen/main_button_size_land"
             android:layout_column="3"
+            android:layout_margin="10dp"
             android:layout_row="1"
-            android:text="@string/title_activity_nearby_stores" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_store"
+            android:padding="5dp"
+            android:text="@string/title_activity_nearby_stores"
+            android:textColor="@color/msm_button_text" />
 
         <Button
             android:id="@+id/HelpButton"
-            android:layout_width="@dimen/main_button_size"
-            android:layout_height="@dimen/main_button_size"
+            android:layout_width="@dimen/main_button_size_land"
+            android:layout_height="@dimen/main_button_size_land"
             android:layout_column="4"
+            android:layout_margin="10dp"
             android:layout_row="1"
-            android:text="@string/title_activity_help" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_help"
+            android:padding="5dp"
+            android:text="@string/help_button_text"
+            android:textColor="@color/msm_button_text" />
 
     </GridLayout>
 
     <TextView
-        android:text="@string/main_welcome"
-        android:textSize="@dimen/main_welcometext_size"
+        android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/welcomeTextView"
         android:layout_above="@+id/gridLayout"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/main_welcome"
+        android:textSize="@dimen/main_welcometext_size" />
 
 
 </RelativeLayout>

@@ -28,7 +28,7 @@ public class MySheetsAddEditFragment extends Fragment
 
     // Defines callback method implemented by MainActivity
     public interface AddEditFragmentListener {
-        // Called when contact is saved
+        // Called when an entry is saved
         void onAddEditCompleted(Uri entryUri);
     }
 
@@ -36,10 +36,10 @@ public class MySheetsAddEditFragment extends Fragment
     private static final int ENTRY_LOADER = 0;
 
     private AddEditFragmentListener listener; // MainActivity
-    private Uri entryUri; // Uri of selected contact
+    private Uri entryUri; // Uri of selected entry
     private boolean addingNewEntry = true; // adding (true) or editing
 
-    // EditTexts for contact information
+    // EditTexts for entry information
     private TextInputLayout titleTextInputLayout;
     private TextInputLayout composerTextInputLayout;
     private TextInputLayout genreTextInputLayout;
@@ -91,14 +91,14 @@ public class MySheetsAddEditFragment extends Fragment
         coordinatorLayout = (CoordinatorLayout) getActivity().findViewById(
                 R.id.coordinatorLayout);
 
-        Bundle arguments = getArguments(); // Null if creating new contact
+        Bundle arguments = getArguments(); // Null if creating new entry
 
         if (arguments != null) {
             addingNewEntry = false;
             entryUri = arguments.getParcelable(MySheetsActivity.ENTRY_URI);
         }
 
-        // If editing an existing contact, create Loader to get the contact
+        // If editing an existing entry, create Loader to get the entry
         if (entryUri != null)
             getLoaderManager().initLoader(ENTRY_LOADER, null, this);
 
@@ -201,7 +201,7 @@ public class MySheetsAddEditFragment extends Fragment
         switch (id) {
             case ENTRY_LOADER:
                 return new CursorLoader(getActivity(),
-                        entryUri, // Uri of contact to display
+                        entryUri, // Uri of entry to display
                         null, // null projection returns all columns
                         null, // null selection returns all rows
                         null, // no selection arguments

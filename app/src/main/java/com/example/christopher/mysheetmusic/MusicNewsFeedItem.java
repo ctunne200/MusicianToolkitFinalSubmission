@@ -32,6 +32,6 @@ public class MusicNewsFeedItem {
     }
 
     public void setPubDate(String pubDate) {
-        this.pubDate = pubDate.substring(0, pubDate.length() - 5);
+        this.pubDate = pubDate.substring(0, pubDate.length() - 14);
     }
 }

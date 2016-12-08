@@ -8,6 +8,6 @@
         android:title="@string/about"
         android:orderInCategory="100"
         app:showAsAction="always"
-        android:icon="@drawable/ic_about_black" />
+        android:icon="@mipmap/ic_about" />
 
 </menu>

@@ -68,9 +68,7 @@
                 android:value="com.example.christopher.mysheetmusic.MainActivity" />
         </activity>
 
-        <activity android:name=".mcMapActivity"
-            android:label="@string/mc_Map">
-        </activity>
+
 
         <provider
             android:name=".data.MySheetsContentProvider"

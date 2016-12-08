@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#9E9E9E</color>
+    <color name="colorAccent">#607D8B</color>
+    <color name="msm_bg_color">#cccccc</color>
+    <color name="msm_button_background">#000000</color>
+    <color name="msm_button_text">#FFFFFF</color>
+
+
+
+
+
 </resources>

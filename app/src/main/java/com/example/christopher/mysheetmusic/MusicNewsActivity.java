@@ -17,7 +17,7 @@ import static com.example.christopher.mysheetmusic.R.string.aboutdialog_title;
 public class MusicNewsActivity extends AppCompatActivity {
     // Creates Recycler View
     RecyclerView recyclerView;
-    String RssUrlMenuItem = "http://www.musicnotes.com/blog";
+    String RssUrlMenuItem = "http://www.musicroom.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

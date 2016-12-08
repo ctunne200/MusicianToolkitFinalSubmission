@@ -6,6 +6,8 @@
     <string name="title_activity_music_news">Music News</string>
     <string name="title_activity_nearby_stores">Nearby Stores</string>
     <string name="title_activity_help">Help</string>
+    <string name="help_button_text">Help and Features</string>
+
     <string name="menuitem_edit">Edit</string>
     <string name="menuitem_delete">Delete</string>
     <string name="hint_title_required">Title (Required)</string>
@@ -31,11 +33,18 @@
     <string name="main_welcome">What would you like to do?</string>
     <string name="aboutdialog_title">About this App</string>
     <string name="aboutdialog_desc">Created by Christopher Tunney (S1315065) Version 1.0</string>
-    <string name="mc_Map">EK Famous 5</string>
+    <string name="under_dev_title">Under Development!</string>
+    <string name="under_dev_desc">This feature is currently unusable, but will be fixed in a later release.</string>
 
-    <string name="black">Black</string>
-    <string name="blue">Blue</string>
-    <string name="pick">Pick Your Colour</string>
-    <string name="agree">I agree to the terms and conditions</string>
-    <string name="rss_url">MusicNotes Blog</string>
+    <string name="rss_url">MusicRoom.com</string>
+    <string name="help_features_head">Features of this App</string>
+    <string name="help_my_sheets_head">Using the My Sheets Feature</string>
+    <string name="help_add_sheets_head">Adding Sheet Music Entries to your Library</string>
+    <string name="help_edit_sheets_head">Editing a Sheet Entry from your Library</string>
+    <string name="help_music_news_head">Using the Music News Page</string>
+    <string name="help_features_desc">This app will allow you to store information on any of your sheet music. You can even edit your entries after you add them! You can also view the latest news from the MusicNotes.com blog.</string>
+    <string name="help_my_sheets_desc">From the main menu, tap on the My Sheets button. This will display your library of sheet music you have collected and added here.</string>
+    <string name="help_add_sheets_desc">From the My Sheets page, tap on the circle button at the bottom right of the screen. This will take you to the form to add a new sheet entry. Tapping any of the blank spaces will bring up the keyboard. Hit the circular save button when you are finished. The title is required but the rest are optional!</string>
+    <string name="help_edit_sheets_desc">Tap on an entry from the library. This will take you the edit page. Tapping on the contents you entered previously will bring up the keyboard. Tap on the circular save button when you are finished.</string>
+    <string name="help_music_news_desc">From the main menu, tap on the Music News button. After loading, a list will appear, with each item displaying information on each post of the MusicNotes.com blog. Tapping on any of these posts will open that post on the web. You can also access the blog website by tapping on the MUSICNOTES BLOG button at the very top of the screen, which will open the blog in your default browser.</string>>
 </resources>

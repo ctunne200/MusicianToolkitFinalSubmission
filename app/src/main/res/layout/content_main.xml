@@ -26,44 +26,64 @@
             android:layout_width="@dimen/main_button_size"
             android:layout_height="@dimen/main_button_size"
             android:layout_column="1"
+            android:layout_margin="10dp"
             android:layout_row="1"
-            android:text="@string/title_activity_my_sheets" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_library"
+            android:padding="5dp"
+            android:text="@string/title_activity_my_sheets"
+            android:textColor="@color/msm_button_text" />
 
         <Button
             android:id="@+id/MusicNewsButton"
             android:layout_width="@dimen/main_button_size"
             android:layout_height="@dimen/main_button_size"
             android:layout_column="2"
+            android:layout_margin="10dp"
             android:layout_row="1"
-            android:text="@string/title_activity_music_news" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_rss"
+            android:padding="5dp"
+            android:text="@string/title_activity_music_news"
+            android:textColor="@color/msm_button_text" />
 
         <Button
             android:id="@+id/NearbyStoresButton"
             android:layout_width="@dimen/main_button_size"
             android:layout_height="@dimen/main_button_size"
             android:layout_column="1"
+            android:layout_margin="10dp"
             android:layout_row="2"
-            android:text="@string/title_activity_nearby_stores" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_store"
+            android:padding="5dp"
+            android:text="@string/title_activity_nearby_stores"
+            android:textColor="@color/msm_button_text" />
 
         <Button
             android:id="@+id/HelpButton"
             android:layout_width="@dimen/main_button_size"
             android:layout_height="@dimen/main_button_size"
             android:layout_column="2"
+            android:layout_margin="10dp"
             android:layout_row="2"
-            android:text="@string/title_activity_help" />
+            android:background="@color/msm_button_background"
+            android:drawableStart="@mipmap/ic_help"
+            android:padding="5dp"
+            android:text="@string/help_button_text"
+            android:textColor="@color/msm_button_text" />
 
 
     </GridLayout>
 
     <TextView
-        android:text="@string/main_welcome"
-        android:textSize="@dimen/main_welcometext_size"
+        android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:id="@+id/welcomeTextView" />
+        android:text="@string/main_welcome"
+        android:textSize="@dimen/main_welcometext_size" />
 
 </RelativeLayout>

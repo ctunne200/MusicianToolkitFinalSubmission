@@ -100,9 +100,11 @@ public class MySheetsDetailFragment extends Fragment
             case R.id.action_edit:
                 listener.onEditEntry(entryUri); // pass Uri to listener
                 return true;
+            /*
             case R.id.action_delete:
                 deleteEntry();
                 return true;
+                */
         }
 
         return super.onOptionsItemSelected(item);
@@ -135,7 +137,7 @@ public class MySheetsDetailFragment extends Fragment
                                         DialogInterface dialog, int button) {
 
                                     // use Activity's ContentResolver to invoke
-                                    // delete on the AddressBookContentProvider
+                                    // delete on the ContentProvider
                                     getActivity().getContentResolver().delete(
                                             entryUri, null, null);
                                     listener.onEntryDeleted(); // notify listener

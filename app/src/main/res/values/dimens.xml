@@ -5,5 +5,8 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="divider_margin">16dp</dimen>
     <dimen name="main_button_size">150dp</dimen>
-    <dimen name="main_welcometext_size">25dp</dimen>
+    <dimen name="main_button_size_land">130dp</dimen>
+    <dimen name="main_welcometext_size">25sp</dimen>
+    <dimen name="list_header_text">17sp</dimen>
+
 </resources>

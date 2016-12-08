@@ -30,7 +30,7 @@ public class MySheetsFragment extends Fragment
         void onAddEntry();
     }
 
-    private static final int ENTRIES_LOADER = 0; // identifies Loader
+    private static final int LOADER = 0; // identifies Loader
 
     // Used to inform the MainActivity when a entry is selected
     private EntryFragmentListener listener;
@@ -104,7 +104,7 @@ public class MySheetsFragment extends Fragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        getLoaderManager().initLoader(ENTRIES_LOADER, null, this);
+        getLoaderManager().initLoader(LOADER, null, this);
     }
 
     // Called from MainActivity when other Fragment's update database
@@ -117,9 +117,9 @@ public class MySheetsFragment extends Fragment
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         // Create an appropriate CursorLoader based on the id argument
         switch (id) {
-            case ENTRIES_LOADER:
+            case LOADER:
                 return new CursorLoader(getActivity(),
-                        DatabaseDescription.Entry.CONTENT_URI, // Uri of contacts table
+                        DatabaseDescription.Entry.CONTENT_URI, // Uri of entry table
                         null, // null projection returns all columns
                         null, // null selection returns all rows
                         null, // no selection arguments

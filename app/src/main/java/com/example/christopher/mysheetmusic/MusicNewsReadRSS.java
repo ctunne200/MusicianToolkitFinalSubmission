@@ -27,7 +27,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 public class MusicNewsReadRSS extends AsyncTask<Void, Void, Void> {
     Context context;
     // Creates a string which holds the URL for the RSS feed XML
-    String address = "http://www.musicnotes.com/blog/feed/";
+    //String address = "http://www.musicnotes.com/blog/feed/";
+    String address = "http://www.musicroom.com/rss/feed.ashx?feed=new-releases";
 
     // Creates a progressDialog object
     ProgressDialog progressDialog;

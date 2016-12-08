@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.christopher.mysheetmusic.data.DatabaseDescription.Entry;
 
 class MySheetsDatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "AddressBook.db";
+    private static final String DATABASE_NAME = "Library.db";
     private static final int DATABASE_VERSION = 1;
 
     // constructor
@@ -19,13 +19,13 @@ class MySheetsDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // SQL for creating the entires table
-        final String CREATE_ENTRIES_TABLE =
+        final String CREATE_ENTRY_TABLE =
                 "CREATE TABLE " + DatabaseDescription.Entry.TABLE_NAME + "(" +
                         DatabaseDescription.Entry._ID + " integer primary key, " +
                         DatabaseDescription.Entry.COLUMN_TITLE + " TEXT, " +
                         Entry.COLUMN_COMPOSER + " TEXT, " +
                         Entry.COLUMN_GENRE + " TEXT);";
-        db.execSQL(CREATE_ENTRIES_TABLE); // create the entries table
+        db.execSQL(CREATE_ENTRY_TABLE); // create the entries table
     }
 
     // normally defines how to upgrade the database when the schema changes

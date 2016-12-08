@@ -3,6 +3,7 @@ package com.example.christopher.mysheetmusic;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,13 +14,18 @@ import android.widget.Button;
 
 import static com.example.christopher.mysheetmusic.R.string.aboutdialog_desc;
 import static com.example.christopher.mysheetmusic.R.string.aboutdialog_title;
+import static com.example.christopher.mysheetmusic.R.string.under_dev_desc;
+import static com.example.christopher.mysheetmusic.R.string.under_dev_title;
 
 public class MainActivity extends AppCompatActivity {
-
+    CoordinatorLayout coordinatorLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id
+                .coordinatorLayout);
 
         // Creates buttons to access other activities
         Button mySheetsButton;
@@ -71,10 +77,24 @@ public class MainActivity extends AppCompatActivity {
         nearbyStoresButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                // Starts NearbyStoresActivity when the nearbyStoresButton is clicked
-                Intent nearbyStoresIntent = new Intent(MainActivity.this,
-                        NearbyStoresActivity.class);
-                startActivity(nearbyStoresIntent);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (!isFinishing()){
+                            // Creates an Alert Dialog, setting the title and message to their respective string values
+                            new AlertDialog.Builder(MainActivity.this)
+                                    .setTitle(under_dev_title)
+                                    .setMessage(under_dev_desc)
+                                    .setCancelable(false)
+                                    .setPositiveButton("Close", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+
+                                        }
+                                    }).create().show();
+                        }
+                    }
+                });
             }
         });
 

@@ -12,24 +12,24 @@ import com.example.christopher.mysheetmusic.R;
 import com.example.christopher.mysheetmusic.data.DatabaseDescription.Entry;
 
 public class MySheetsContentProvider extends ContentProvider {
-    // used to access the database
+    // Used to access the database
     private MySheetsDatabaseHelper dbHelper;
 
     // UriMatcher helps ContentProvider determine operation to perform
     private static final UriMatcher uriMatcher =
             new UriMatcher(UriMatcher.NO_MATCH);
 
-    // constants used with UriMatcher to determine operation to perform
-    private static final int ONE_ENTRY = 1; // manipulate one contact
-    private static final int ENTRIES = 2; // manipulate contacts table
+    // Constants used with UriMatcher to determine operation to perform
+    private static final int ONE_ENTRY = 1; // manipulate one entry
+    private static final int ENTRIES = 2; // manipulate entry table
 
-    // static block to configure this ContentProvider's UriMatcher
+    // Static block to configure this ContentProvider's UriMatcher
     static {
         // Uri for Entry with the specified id (#)
         uriMatcher.addURI(DatabaseDescription.AUTHORITY,
                 Entry.TABLE_NAME + "/#", ONE_ENTRY);
 
-        // Uri for Contacts table
+        // Uri for entry table
         uriMatcher.addURI(DatabaseDescription.AUTHORITY,
                 DatabaseDescription.Entry.TABLE_NAME, ENTRIES);
     }
